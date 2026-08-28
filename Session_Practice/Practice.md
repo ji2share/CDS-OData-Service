@@ -12,7 +12,15 @@ Module #4: Expressions & Calculations (CDS Functions)
 
 Module #5: AMDP — HANA-Powered Logic (Table Function & Procedure)
 
+Module #6: VDM & Data Category (Layered CDS view)
+
+Module #7: CDS view extension
+
 Module #8: UI-Ready CDS — Annotations
+
+Module #9: Virtual Elements
+
+Module #10: CDS to OData
 
 After completing any task in the above module, please 
 1. Go to Discussions
