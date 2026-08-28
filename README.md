@@ -7,3 +7,5 @@ Here, will track two things
 
 Go to "Session Practice" folder for more info about task 1. 
 
+Read "Practice.md" file for more info.
+
