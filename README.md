@@ -3,5 +3,7 @@ This repository contains SAP learning materials, presentations, architecture dia
 
 Here, will track two things
 1. And let's begin with practice tracking, please update the Module # once you complete the task
-2. Let me give a task, you post your findings or comments. 
+2. Let me give a task, you post your findings or comments.
+
+Go to "Session Practice" folder for more info about task 1. 
 
