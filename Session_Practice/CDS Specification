@@ -1,1 +1,10 @@
+1. Use Case: Display sales orders with customer information
+   Tables: VBAK (Sales Header) → KNA1 (Customer Master)
 
+2. Use Case: Complete sales order details with line items, customer, and product
+   Tables: VBAK → VBAP → KNA1 → MARA → MAKT
+
+3. Use Case: Show all sales orders whether or not they have line items
+   Tables: VBAK → VBAP
+
+4. 
