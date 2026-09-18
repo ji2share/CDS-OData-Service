@@ -2,8 +2,6 @@
 define table function Yc2_tf
 @EndUserText.label: 'tf'
 define table function Yc2_tf
- with parameters
-    p_bukrs : bukrs
 returns {
   
   mandt:mandt;
