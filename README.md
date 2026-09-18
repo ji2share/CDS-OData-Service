@@ -9,3 +9,5 @@ Go to "Session Practice" folder for more info about task 1.
 
 Read "Practice.md" file for more info.
 
+# Let's start using GitHUb for our development 
+
