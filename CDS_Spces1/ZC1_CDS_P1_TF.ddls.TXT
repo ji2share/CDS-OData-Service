@@ -19,4 +19,7 @@ returns {
   billing_amount          : netwr;
   open_amount             : netwr;
   payment_status          : char20;
+  add1 : char25;
+add2:char25;
+
 }
