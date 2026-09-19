@@ -4,7 +4,7 @@ define table function Yc2_tf
 define table function Yc2_tf
 returns {
   
-  mandt:mandt;
+  client :mandt;
   vbeln                   : vbeln_va;
   bukrs                   : bukrs;
   kunnr                   : kunnr;
