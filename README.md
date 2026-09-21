@@ -11,3 +11,6 @@ Read "Practice.md" file for more info.
 
 # Let's start using GitHUb for our development 
 
+Dev1_changes:
+1 - 5 poinrs
+
