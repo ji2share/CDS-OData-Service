@@ -15,12 +15,6 @@ returns {
   days_open               : abap.int4;
   overall_delivery_status : char1;
   overall_billing_status  : char1;
-  status_text             : char20;
-  latest_billing_doc      : vbeln_vf;
-  billing_amount          : netwr;
-  open_amount             : netwr;
-  payment_status          : char20;
-  add1 : char25;
-add2:char25;
+
 
 }
