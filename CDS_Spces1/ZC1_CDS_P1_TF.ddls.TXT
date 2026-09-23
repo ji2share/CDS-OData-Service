@@ -2,6 +2,7 @@
 define table function Yc2_tf
 @EndUserText.label: 'tf'
 define table function Yc2_tf
+with parameter p_bukrs:bukrs
 returns {
   
   client :mandt;
