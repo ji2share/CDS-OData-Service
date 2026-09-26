@@ -11,7 +11,5 @@
            k.fksak                               AS overall_billing_status,
            k.gbstk                                AS status_indicator
       FROM vbak AS h
-      left outer join vbuk AS k
-        ON k.vbeln = h.vbeln
-      left outer join tvko AS t
-        ON t.vkorg = h.vkorg;
+ left outer join
+
