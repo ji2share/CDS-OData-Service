@@ -1,0 +1,55 @@
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Anno'
+@Metadata.ignorePropagatedAnnotations: true
+@OData.publish: true
+@Search.searchable: true
+define view entity zc1_annotations 
+      as select from    kna1 as K
+    left outer join knb1 as B on B.kunnr = K.kunnr
+{
+      @EndUserText.label: 'Customer Number'                  // 5) Field user text
+      @EndUserText.quickInfo: 'Unique customer ID in master data' // 6) Tooltip/quick help
+  key K.kunnr                              as Customer,
+
+      @EndUserText.label: 'Customer Name'
+      @EndUserText.quickInfo: 'Name from general customer master'
+      @Search.defaultSearchElement: true
+      K.name1                              as CustomerName,
+
+      @EndUserText.label: 'Country'
+      @EndUserText.quickInfo: 'Country key from customer master'
+      K.land1                              as Country,
+
+      @EndUserText.label: 'Company Code 23'
+      @EndUserText.quickInfo: 'Company code specific customer data'
+      @UI.selectionField: [{ position: 20 }]
+      B.bukrs                              as CompanyCode,
+
+      @EndUserText.label: 'Reconciliation Account'
+      @EndUserText.quickInfo: 'G/L account for customer reconciliation'
+      B.akont                              as ReconciliationAccount,
+
+      @EndUserText.label: 'Demo Amount'
+      @Semantics.amount.currencyCode: 'DemoCurrency' // 2) Amount -> Currency reference
+      cast( '1000.00' as abap.curr(15,2) ) as DemoAmount,
+
+      @EndUserText.label: 'Demo Currency'
+      cast( 'USD' as abap.cuky(5) )        as DemoCurrency,
+
+      @EndUserText.label: 'Demo Quantity'
+      @Semantics.quantity.unitOfMeasure: 'DemoUnit'  // 3) Quantity -> Unit reference
+      cast( '25.000' as abap.quan(13,3) )  as DemoQuantity,
+
+      @EndUserText.label: 'Demo Unit'
+      cast( 'EA' as abap.unit(3) )         as DemoUnit,
+      
+      @Semantics.amount.currencyCode: 'DemoCurrency'
+      @EndUserText.label: 'BOE limit'
+      B.webtr                              as billofexh_limit
+      
+    
+}
+where
+  K.loevm = ''
+    
