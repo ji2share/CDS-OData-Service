@@ -1,1 +1,8 @@
 Meta data 1
+<<<<<<< HEAD
+=======
+
+Meta data 2
+
+Meta data 3
+>>>>>>> dev3_changes
