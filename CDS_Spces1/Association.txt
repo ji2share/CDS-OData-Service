@@ -12,9 +12,6 @@ define view entity zc1_annotations
       @EndUserText.quickInfo: 'Unique customer ID in master data' // 6) Tooltip/quick help
   key K.kunnr                              as Customer,
 
-      @EndUserText.label: 'Customer Name'
-      @EndUserText.quickInfo: 'Name from general customer master'
-      @Search.defaultSearchElement: true
       K.name1                              as CustomerName,
 
       @EndUserText.label: 'Country'
