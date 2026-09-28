@@ -1,1 +1,53 @@
 
+--batch_1
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+GET BatchSet(Sorder='4500000001',Item='000010') HTTP/1.1
+
+
+--batch_1
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+GET BatchSet(Sorder='4500000003',Item='000010') HTTP/1.1
+
+
+--batch_1
+Content-Type: multipart/mixed; boundary=changeset
+
+--changeset
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+POST BatchSet HTTP/1.1
+Content-Type: application/json
+
+{
+"Sorder":"4500000011",
+"Item":"000010",
+"Matnr":"MAT5"
+}
+
+--changeset
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+PUT BatchSet(Sorder='4500000003',Item='000010') HTTP/1.1
+Content-Type: application/json
+
+{
+"Matnr":"MAT1_UPDATED 4"
+}
+
+--changeset
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+DELETE BatchSet(Sorder='4500000009',Item='000010') HTTP/1.1
+
+
+--changeset--
+
+
+--batch_1--
